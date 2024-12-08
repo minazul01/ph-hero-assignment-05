@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Block</title>
+    <!-- tailwind css and daysiUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <!-- navbar section -->
+     <section class="bg-gray-100">
+        <div class="max-w-7xl mx-auto p-7">
+              <div class="flex justify-between items-center mb-0 md:mb-8">
+                    <div class="cursor-pointer py-2 px-6 hover:bg-gray-400 rounded-md bg-primaryColor">
+                       <a href="./index.html"> <h1 class="text-2xl font-bold text-black">Home</h1></a>
+                    </div>
+                    <div>
+                        <div class="hidden md:flex items-center space-x-3">
+                           <img class="border-2 border-dashed" src="./assets/logo.png" alt="">
+                           <h2 class="text-2xl font-bold text-black">Donate Bangladesh</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="items-center space-x-3 hidden md:flex">
+                            <img class="border-2 border-dashed" src="./assets/coin.png" alt="">
+                            <h2 class="text-2xl font-bold text-gray-500">$<span id="my-balance">5500</span></h2>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+              
+              </div>
+        </div>
+    </section
+    <main>
+        <section class="max-w-7xl mx-auto">
+            <div>
+                <h2 class="text-3xl font-extrabold my-10">Important FAQ!</h2>
+            </div>
+            <div>
+              <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">what is the document object model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents, allowing developers to dynamically access, manipulate, and update HTML and XML content in a structured, hierarchical way.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">what do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p>To select a DOM element, use JavaScript methods like getElementById, querySelector, or getElementsByClassName to access specific elements dynamically.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">what is event delegation in the context of the DOM, and is it useful? </div>
+                  <div class="collapse-content">
+                    <p>Event delegation is a technique where a single parent element handles events for its child elements, improving performance and enabling dynamic content handling efficiently in the DOM.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">what do you multiple an elements attributes and styles using the DOM? </div>
+                  <div class="collapse-content">
+                    <p>To modify multiple attributes and styles of elements in the DOM, use setAttribute, style properties, or classList for efficient updates.</p>
+                  </div>
+                </div>
+            </div>
+      </section>
+    </main>
+</body>
+</html>

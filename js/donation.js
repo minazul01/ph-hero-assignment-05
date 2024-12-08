@@ -19,11 +19,7 @@ document.getElementById('Donate-one').addEventListener('click', function(){
     /* add in the function in the donation and decrease my balance */
     const addDonation = addDonationBalance + addInput;
     const decreaseMyBalance = addMyBalance - addInput;
-    /* add input value in the donation balance and decrease my balance  */
-    // document.getElementById('donation-balance').innerText = addDonation;
-    // document.getElementById('my-balance').innerText = decreaseMyBalance;
-    // document.getElementById('input-field').value = ' ';
-    if(addDonation < addMyBalance && typeof (Number)){
+    if(addDonation < addMyBalance && typeof (Number) && addDonation > 0){
         document.getElementById('donation-balance').innerText = addDonation;
         document.getElementById('my-balance').innerText = decreaseMyBalance;
         document.getElementById('input-field').value = ' ';
@@ -48,7 +44,7 @@ document.getElementById('Donate-one').addEventListener('click', function(){
              );
              
              historyItem.innerHTML = `
-             <p class="text-lg font-medium">serial: ${count}</p>
+              <p class="text-lg font-medium">serial: ${count}</p>
               <p class="text-lg font-medium"> $${addInput} is Donate for Flood at Noakhali, Bangladesh</p>
               <p class="text-xs font-normal">${new Date()}</p>
              
@@ -87,3 +83,4 @@ document.getElementById('back-home').addEventListener('click', function(){
      backHome.classList.add('bg-primaryColor');
      historyAdd.classList.add('hidden')
 })
+
